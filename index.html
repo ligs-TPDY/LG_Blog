@@ -1,10 +1,88 @@
+<!--
+    <!DOCTYPE> 声明非常重要，它是一种标准通用标记语言的文档类型声明，
+    通过该标签，浏览器能够了解HTML5文档正在使用的HTML规范，
+    <!DOCTYPE> 声明是HTML5文档的起始点，也就是说它必须位于HTML5文档的第一行！
+ -->
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>天蓬大元</title>
+
+
+
 </head>
+
 <body>
 
+    <!--
+        HTML5 <a> 标签的主要作用是用于超链接，
+        可以链接到其他页面也可以链接到本地的其他文件，
+        你可以通过下面的这个示例来认识 <a> 标签。
+    -->
+    <a href="https://github.com/ligs-TPDY">
+        天蓬大元的GitHub地址
+    </a>
+
+    <br>
+    <br>
+    <br>
+
+    <!--
+        HTML5 <area>标签能够在所需图像中设置作用区域，
+        使用者可以通过点击该作用区域来跳转到相应的页面
+
+        <area> 标签定义图像映射内部的区域（图像映射指的是带有可点击区域的图像）。
+        <area> 元素始终嵌套在 <map> 标签内部。
+        注释： <img> 标签中的 usemap 属性与 <map> 元素中的 name 相关联，以创建图像与映射之间的关系。
+    -->
+    <img src="source/img/source_img_food_01.jpg" width="500" height="333" usemap="#food01">
+    <map name="#food01">
+        <area shape="rect" coords="0,0,500,100" target="_blank" alt="up" href="https://www.jianshu.com">
+        <area shape="rect" coords="0,200,500,100" target="_blank" alt="middle" href="http://www.cocoachina.com">
+        <area shape="rect" coords="0,400,500,100" target="_blank" alt="down" href="http://blog.csdn.net">
+    </map>
+
+    <br>
+    <br>
+    <br>
+
+    <!--
+        <abbr> 标签用来表示一个缩写词或者首字母缩略词，如"WWW"或者"NATO"。
+    -->
+    <p>
+        the <abbr title="World Health Organization"> WHO </abbr> was founded in 1948
+    </p>
+
+    <br>
+    <br>
+    <br>
+
+    <!--
+        <article> 标签定义独立的内容。
+        <article> 标签定义的内容本身必须是有意义的且必须是独立于文档的其余部分。
+        <article> 的潜在来源：
+            论坛帖子
+            博客文章
+            新闻故事
+            评论
+    -->
+    <article>
+        <h1>2019-6-20</h1>
+        <p>打卡第一天</p>
+    </article>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
 </body>
+
 </html>
